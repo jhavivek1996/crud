@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert Form</title>
+	{% load staticfiles%}
+</head>
+<body>
+	<form method="POST">
+			{% csrf_token %}
+			{{ insert_form }}
+			<input type="submit" name="">
+	</form>
+
+</body>
+</html>

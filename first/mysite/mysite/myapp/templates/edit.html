@@ -1,0 +1,13 @@
+{% load staticfiles %}
+
+			
+<form method="POST">
+	{% csrf_token %}
+	<input type="text" value="{{ show.g_id }}">
+	<input type="text" value="{{ show.name }}">
+	<input type="text" value="{{ show.price }}">
+	<input type="text" value="{{ show.size }}">
+	<input type="text" value="{{ show.date }}">
+	<input type="submit" value="submit">
+	
+</form>
